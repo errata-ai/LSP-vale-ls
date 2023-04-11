@@ -1,0 +1,9 @@
+{
+    "initializationOptions": {
+        "installVale": true
+    },
+    "selector": "source.ini | text.html.markdown | source.yaml",
+    "command": [
+        "${storage_path}/LSP-vale-ls/vale-ls"
+    ],
+}

@@ -1,0 +1,10 @@
+[
+    {
+        "caption": "LSP-vale-ls: Sync Configuration",
+        "command": "lsp_execute",
+        "args": {
+            "session_name": "vale-ls",
+            "command_name": "cli.sync",
+        }
+    }
+]
