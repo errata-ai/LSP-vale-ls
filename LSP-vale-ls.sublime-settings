@@ -2,7 +2,7 @@
     "initializationOptions": {
         "installVale": true
     },
-    "selector": "source.ini | text.html.markdown | source.yaml",
+    "selector": "source.ini | source.yaml | text.html.markdown | text.restructuredtext | text.asciidoc",
     "command": [
         "${storage_path}/LSP-vale-ls/vale-ls"
     ],
