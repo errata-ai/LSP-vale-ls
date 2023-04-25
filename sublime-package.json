@@ -21,7 +21,7 @@
                 "initializationOptions": {
                   "properties": {
                     "installVale": {
-                      "default": false,
+                      "default": true,
                       "description": "Install and update Vale automatically.",
                       "type": "boolean"
                     },
