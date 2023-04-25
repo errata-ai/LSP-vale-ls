@@ -1,6 +1,8 @@
 {
     "initializationOptions": {
-        "installVale": true
+        "installVale": true,
+        "filter": null,
+        "config": null
     },
     "selector": "source.ini | source.yaml | text.html.markdown | text.restructuredtext | text.asciidoc",
     "command": [

@@ -12,7 +12,7 @@
               "$ref": "sublime://settings/LSP-plugin-base"
             },
             {
-              "$ref": "sublime://settings/LSP-vale#/definitions/PluginConfig"
+              "$ref": "sublime://settings/LSP-vale-ls#/definitions/PluginConfig"
             }
           ],
           "definitions": {
