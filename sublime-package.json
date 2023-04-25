@@ -18,13 +18,22 @@
           "definitions": {
             "PluginConfig": {
               "properties": {
-                "settings": {
-                  "additionalProperties": false,
+                "initializationOptions": {
                   "properties": {
-                    "vale-ls.installVale": {
+                    "installVale": {
                       "default": false,
                       "description": "Install and update Vale automatically.",
                       "type": "boolean"
+                    },
+                    "filter": {
+                      "default": "",
+                      "description": "An output filter to apply when calling Vale.",
+                      "type": "string"
+                    },
+                    "config": {
+                      "default": "",
+                      "description": "An absolute path to a .vale.ini file to be used as the default configuration.",
+                      "type": "string"
                     },
                   }
                 }
