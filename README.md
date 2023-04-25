@@ -4,9 +4,9 @@ This is a helper package that automatically installs and updates [`vale-ls`][1] 
 
 ## Requirements
 
-> It's recommended, but not required, to install the [LSP-json][2] package which will provide auto-completion and validation for this package's settings.
-
 To use this package, you must have the [LSP][3] package installed.
+
+> It's recommended, but not required, to install the [LSP-json][2] package which will provide auto-completion and validation for this package's settings.
 
 ## Configuration
 
@@ -20,7 +20,7 @@ There are multiple ways to configure the package and the language server.
     {
         "settings": {
             "LSP": {
-                "LSP-ruff": {
+                "LSP-vale-ls": {
                     "initializationOptions": {
                         // Put your settings here
                     }
