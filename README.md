@@ -1,6 +1,6 @@
-# LSP-vale
+# LSP-vale-ls
 
-This is a helper package that automatically installs and updates [`vale-ls`][1] for you. Vale is a syntax-aware linter for prose built with speed and extensibility in mind.
+This is a helper package that automatically installs and updates [`vale-ls`][1] for [Sublime Text][4]. Vale is a syntax-aware linter for prose built with speed and extensibility in mind.
 
 ## Requirements
 
@@ -33,3 +33,4 @@ There are multiple ways to configure the package and the language server.
 [1]: https://github.com/errata-ai/vale-ls
 [2]: https://packagecontrol.io/packages/LSP-json
 [3]: https://packagecontrol.io/packages/LSP
+[4]: https://www.sublimetext.com/
