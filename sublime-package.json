@@ -20,17 +20,22 @@
               "properties": {
                 "initializationOptions": {
                   "properties": {
-                    "installVale": {
+                    "vale-ls.installVale": {
                       "default": true,
                       "description": "Install and update Vale automatically.",
                       "type": "boolean"
                     },
-                    "filter": {
+                    "vale-ls.syncOnStart": {
+                      "default": true,
+                      "description": "Runs `vale sync` upon starting the server.",
+                      "type": "boolean"
+                    },
+                    "vale-ls.filter": {
                       "default": "",
                       "description": "An output filter to apply when calling Vale.",
                       "type": "string"
                     },
-                    "config": {
+                    "vale-ls.configPath": {
                       "default": "",
                       "description": "An absolute path to a .vale.ini file to be used as the default configuration.",
                       "type": "string"

@@ -1,8 +1,27 @@
 {
     "initializationOptions": {
-        "installVale": true,
-        "filter": "",
-        "config": ""
+        // Install and update Vale automatically.
+        // 
+        // If false, the Vale executable must be installed and available on 
+        // your $PATH.
+        "vale-ls.installVale": true,
+        // Runs `vale sync` upon starting the server.
+        // 
+        // Also available as a command: "LSP-vale-ls: Sync Configuration".
+        "vale-ls.syncOnStartup": true,
+        // An output filter to apply when calling Vale.
+        // 
+        // Example:
+        // 
+        //    "vale-ls.filter": ".Level in ['warning', 'error']"
+        // 
+        // See https://vale.sh/manual/filter/ for more information.
+        "vale-ls.filter": "",
+        // An absolute path to a Vale configuration file (`.vale.ini`).
+        // 
+        // In general, you should leave this blank and rely on the default 
+        // search process instead.
+        "vale-ls.configPath": ""
     },
     "selector": "source.ini | source.yaml | text.html.markdown | text.restructuredtext | text.asciidoc",
     "command": [
