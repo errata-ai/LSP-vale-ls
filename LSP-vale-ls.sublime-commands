@@ -6,5 +6,13 @@
             "session_name": "vale-ls",
             "command_name": "cli.sync",
         }
+    },
+    {
+        "caption": "Preferences: LSP-vale-ls Settings",
+        "command": "edit_settings",
+        "args": {
+            "base_file": "${packages}/LSP-vale-ls/LSP-vale-ls.sublime-settings",
+            "default": "// Settings in here override those in \"LSP-vale-ls/LSP-vale-ls.sublime-settings\"\n{\n\t$0\n}\n"
+        }
     }
 ]
