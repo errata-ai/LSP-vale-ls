@@ -1,0 +1,3 @@
+# LSP-vale-ls v0.2.2
+
+* Updates `vale-ls` to 0.3.5
