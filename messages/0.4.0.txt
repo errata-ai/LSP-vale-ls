@@ -1,0 +1,3 @@
+# LSP-vale-ls v0.4.0
+
+* Upgrade `vale-ls` to v0.3.8.

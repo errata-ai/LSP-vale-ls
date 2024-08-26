@@ -14,7 +14,7 @@ SESSION_NAME = "vale-ls"
 #
 # After changing this tag, go through the server settings again to see if any
 # new server settings are added or old ones removed.
-TAG = "v0.3.5"
+TAG = "v0.3.8"
 URL = "https://github.com/errata-ai/vale-ls/releases/download/{tag}/vale-ls-{arch}-{platform}.zip"
 
 
@@ -79,9 +79,7 @@ class ValeLS(AbstractPlugin):
 
             serverfile = os.path.join(
                 cls.basedir(),
-                "vale-ls.exe"
-                if sublime.platform() == "windows"
-                else "vale-ls",
+                "vale-ls.exe" if sublime.platform() == "windows" else "vale-ls",
             )
 
             os.remove(zip_path)
