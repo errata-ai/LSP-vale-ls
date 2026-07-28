@@ -1,5 +1,5 @@
 {
-    "initializationOptions": {
+    "initialization_options": {
         // Install and update Vale automatically.
         // 
         // If false, the Vale executable must be installed and available on 

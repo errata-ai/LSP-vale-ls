@@ -72,7 +72,7 @@ There are multiple ways to configure the package and the language server.
         "settings": {
             "LSP": {
                 "LSP-vale-ls": {
-                    "initializationOptions": {
+                    "initialization_options": {
                         // Put your settings here
                     }
                 }
@@ -81,7 +81,7 @@ There are multiple ways to configure the package and the language server.
     }
     ```
 
-[1]: https://github.com/errata-ai/vale-ls
-[2]: https://packagecontrol.io/packages/LSP-json
-[3]: https://packagecontrol.io/packages/LSP
-[4]: https://www.sublimetext.com/
+[1]: https://github.com/vale-cli/vale-ls
+[2]: https://packages.sublimetext.io/packages/LSP-json
+[3]: https://packages.sublimetext.io/packages/LSP
+[4]: https://www.sublimetext.com

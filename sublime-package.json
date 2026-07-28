@@ -18,7 +18,7 @@
           "definitions": {
             "PluginConfig": {
               "properties": {
-                "initializationOptions": {
+                "initialization_options": {
                   "properties": {
                     "installVale": {
                       "default": true,

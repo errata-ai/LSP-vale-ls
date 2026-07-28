@@ -1,0 +1,4 @@
+# LSP-vale-ls v0.5.0
+
+* Upgrade `vale-ls` to v0.5.0.
+* Update initialization options syntax for newer versions of LSP for Sublime Text.

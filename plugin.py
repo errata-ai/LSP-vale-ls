@@ -16,7 +16,7 @@ SESSION_NAME = "vale-ls"
 #
 # After changing this tag, go through the server settings again to see if any
 # new server settings are added or old ones removed.
-TAG = "v0.3.8"
+TAG = "v0.4.0"
 URL = "https://github.com/errata-ai/vale-ls/releases/download/{tag}/vale-ls-{arch}-{platform}.zip"
 
 
