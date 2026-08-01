@@ -8,6 +8,14 @@
         }
     },
     {
+        "caption": "LSP-vale-ls: Install or Update Vale",
+        "command": "lsp_execute",
+        "args": {
+            "session_name": "vale-ls",
+            "command_name": "cli.install",
+        }
+    },
+    {
         "caption": "Preferences: LSP-vale-ls Settings",
         "command": "edit_settings",
         "args": {

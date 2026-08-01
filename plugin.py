@@ -16,8 +16,8 @@ SESSION_NAME = "vale-ls"
 #
 # After changing this tag, go through the server settings again to see if any
 # new server settings are added or old ones removed.
-TAG = "v0.4.0"
-URL = "https://github.com/errata-ai/vale-ls/releases/download/{tag}/vale-ls-{arch}-{platform}.zip"
+TAG = "v0.5.0"
+URL = "https://github.com/vale-cli/vale-ls/releases/download/{tag}/vale-ls-{arch}-{platform}.zip"
 
 
 def arch() -> str:
@@ -33,7 +33,9 @@ def arch() -> str:
 
 def platform() -> str:
     if sublime.platform() == "windows":
-        return "pc-windows-gnu"
+        # Only the x86_64 Windows binary is published as a GNU build; the
+        # ARM64 one is MSVC.
+        return "pc-windows-msvc" if sublime.arch() == "arm64" else "pc-windows-gnu"
     elif sublime.platform() == "osx":
         return "apple-darwin"
     else:

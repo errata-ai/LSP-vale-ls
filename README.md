@@ -59,6 +59,12 @@ To use this package, you must have the [LSP][3] package installed.
     </tr>
 </table>
 
+The server also provides:
+
+- **Diagnostics**: Vale's alerts, updated as you type rather than only on save (see `lintOnChange` and `debounceMs`).
+- **CodeLensProvider**: a per-document metrics lens — word count, reading time, and so on (see `showMetrics`).
+- **Vocabulary code actions**: accept a flagged term into your vocabulary, or reject it.
+
 ## Configuration
 
 There are multiple ways to configure the package and the language server.
@@ -81,7 +87,29 @@ There are multiple ways to configure the package and the language server.
     }
     ```
 
+### Settings
+
+| Setting | Default | Description |
+| --- | --- | --- |
+| `installVale` | `true` | Install and update Vale automatically. If `false`, Vale must be installed and available on your `$PATH`. |
+| `syncOnStartup` | `true` | Run `vale sync` when the server starts. |
+| `filter` | `""` | An [output filter][5] to apply when calling Vale. |
+| `configPath` | `""` | An absolute path to a `.vale.ini` file, used instead of the default search process. |
+| `valeBinaryPath` | `""` | An absolute path to the Vale binary to run, instead of the server-managed copy. |
+| `lintOnChange` | `true` | Lint the buffer as it changes, not just when it's saved. |
+| `debounceMs` | `300` | How long typing has to settle before linting, in milliseconds. |
+| `showMetrics` | `true` | Show the document metrics code lens. |
+| `root` | `""` | An absolute path to the directory to run Vale from, instead of the document's workspace folder. |
+
+### Commands
+
+From the Command Palette:
+
+- `LSP-vale-ls: Sync Configuration` — download the packages and styles your `.vale.ini` asks for.
+- `LSP-vale-ls: Install or Update Vale` — install or update the server-managed copy of Vale.
+
 [1]: https://github.com/vale-cli/vale-ls
 [2]: https://packages.sublimetext.io/packages/LSP-json
 [3]: https://packages.sublimetext.io/packages/LSP
 [4]: https://www.sublimetext.com
+[5]: https://vale.sh/manual/filter/

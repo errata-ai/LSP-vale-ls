@@ -25,7 +25,7 @@
                       "description": "Install and update Vale automatically.",
                       "type": "boolean"
                     },
-                    "syncOnStart": {
+                    "syncOnStartup": {
                       "default": true,
                       "description": "Runs `vale sync` upon starting the server.",
                       "type": "boolean"
@@ -40,6 +40,32 @@
                       "description": "An absolute path to a .vale.ini file to be used as the default configuration.",
                       "type": "string"
                     },
+                    "valeBinaryPath": {
+                      "default": "",
+                      "description": "An absolute path to the Vale binary to run, instead of the server-managed copy.",
+                      "type": "string"
+                    },
+                    "lintOnChange": {
+                      "default": true,
+                      "description": "Lint the buffer as it changes, not just when it's saved.",
+                      "type": "boolean"
+                    },
+                    "debounceMs": {
+                      "default": 300,
+                      "description": "How long typing has to settle before linting, in milliseconds.",
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "showMetrics": {
+                      "default": true,
+                      "description": "Show a code lens with the document's metrics (word count, reading time, etc.).",
+                      "type": "boolean"
+                    },
+                    "root": {
+                      "default": "",
+                      "description": "An absolute path to the directory to run Vale from, instead of the document's workspace folder.",
+                      "type": "string"
+                    }
                   }
                 }
               }

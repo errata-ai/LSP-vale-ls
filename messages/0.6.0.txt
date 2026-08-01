@@ -1,0 +1,10 @@
+# LSP-vale-ls v0.6.0
+
+* Upgrade `vale-ls` to v0.5.0. (v0.5.0 of this package announced this, but
+  shipped `vale-ls` v0.4.0.)
+* Add the settings introduced in `vale-ls` v0.5.0: `valeBinaryPath`,
+  `lintOnChange`, `debounceMs`, `showMetrics`, and `root`.
+* Add a command: "LSP-vale-ls: Install or Update Vale".
+* Fix the settings schema, which validated `syncOnStart` rather than
+  `syncOnStartup`.
+* Fix ARM64 Windows installs, which asked for a build that isn't published.
